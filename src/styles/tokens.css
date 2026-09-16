@@ -1,0 +1,77 @@
+/* ═══════════════════════════════════════════════════════════════
+   RADAR P2P — tokens de diseño (Academia de Arbitraje)
+   Negro cálido · oro · crema. Tema único, deliberado.
+   ═══════════════════════════════════════════════════════════════ */
+:root {
+  color-scheme: dark;
+
+  /* superficies */
+  --ink-0: #080705;
+  --ink-1: #0f0d0a;
+  --ink-2: #16130f;
+  --ink-3: #1e1a14;
+  --ink-4: #27221a;
+
+  /* oro */
+  --gold: #c9a227;
+  --gold-hi: #ebcb6a;
+  --gold-lo: #7a5f1a;
+  --gold-12: rgba(201, 162, 39, 0.12);
+  --gold-18: rgba(201, 162, 39, 0.18);
+  --gold-30: rgba(201, 162, 39, 0.3);
+  --gold-45: rgba(201, 162, 39, 0.45);
+
+  /* texto */
+  --cream: #f3ead6;
+  --sand: #bfb39e;
+  --ash: #7e7566;
+  --ash-lo: #4d463c;
+
+  /* semánticos (independientes del oro) */
+  --ok: #58c78a;
+  --ok-bg: rgba(88, 199, 138, 0.12);
+  --warn: #e4a63b;
+  --warn-bg: rgba(228, 166, 59, 0.12);
+  --info: #6ca8f5;
+  --info-bg: rgba(108, 168, 245, 0.12);
+  --neutral: #a39b8b;
+  --neutral-bg: rgba(163, 155, 139, 0.12);
+  --stop: #e25d55;
+  --stop-bg: rgba(226, 93, 85, 0.12);
+
+  /* líneas */
+  --line: rgba(243, 234, 214, 0.08);
+  --line-gold: var(--gold-18);
+  --line-gold-strong: var(--gold-45);
+
+  /* tipografía */
+  --font-display: 'Barlow Condensed', 'Arial Narrow', Impact, sans-serif;
+  --font-body: 'Manrope', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SF Mono', Menlo, Consolas, monospace;
+
+  /* escala */
+  --fs-xs: 0.72rem;
+  --fs-sm: 0.82rem;
+  --fs-md: 0.95rem;
+  --fs-lg: 1.1rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2.1rem;
+  --fs-3xl: 3rem;
+  --fs-hero: clamp(2.8rem, 9vw, 5.6rem);
+
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 16px;
+
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.02) inset, 0 10px 30px rgba(0, 0, 0, 0.45);
+  --shadow-gold: 0 0 0 1px var(--gold-30), 0 12px 40px rgba(201, 162, 39, 0.12);
+
+  --nav-h: 60px;
+  --tab-h: 64px;
+  --content-max: 1180px;
+  --pad: 18px;
+}
+
+@media (min-width: 720px) {
+  :root { --pad: 28px; }
+}

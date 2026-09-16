@@ -1,0 +1,28 @@
+{
+  "name": "radar-p2p",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Radar P2P — radar, diagnóstico y recomendador operativo de plataformas para alumnos de la Academia de Arbitraje",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "build:single": "vite build --mode single && node scripts/make-artifact.mjs",
+    "typecheck": "tsc --noEmit",
+    "check:engine": "esbuild scripts/engine-check.ts --bundle --platform=node --format=esm --log-level=warning --outfile=node_modules/.cache/engine-check.mjs && node node_modules/.cache/engine-check.mjs"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0",
+    "vite-plugin-singlefile": "^2.3.0"
+  }
+}
